@@ -1,8 +1,8 @@
-require("dotenv").config();
+require("dotenv").config(); //Busca en la raiz del proyecto y los carga en una variable (es necesario crear un archivo .env)
 let express = require('express');
 let app = express();
 let tareasRoutes = require('./routes/tareas');
-let mongose = require("mongose")
+let mongose = require("mongoose")
 
 mongose 
     .connect(process.env.MONGO_URI)

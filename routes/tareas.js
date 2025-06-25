@@ -12,8 +12,8 @@ let tareasController = require("../controllers/tareasController.js");
 //    res.json(`{Otra ruta}`)
 // }
 // )
-router.get('/', tareasController.addTarea); 
+router.get('/', tareasController.getTareas); 
 router.post('/', tareasController.addTarea);
 router.put('/:id', tareasController.editTarea);
-
+router.delete('/:id', tareasController.deleteTarea)
 module.exports = router;
