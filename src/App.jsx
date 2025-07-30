@@ -4,6 +4,7 @@ import Home from './Home.jsx';
 import Login from './login.jsx';
 import Dashboard from './dashboard.jsx';
 import NavBar from './navbar.jsx';
+import About from './About.jsx'
 import './App.css'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/About" element={<About />} />
       </Routes>
     </BrowserRouter>
   );

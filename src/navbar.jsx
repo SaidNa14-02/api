@@ -2,6 +2,7 @@ import { Link } from "react-router";
 import { IoHomeOutline } from "react-icons/io5";
 import { FaWpforms } from "react-icons/fa6";
 import { MdOutlineSpaceDashboard } from "react-icons/md";
+import { IoIosInformationCircleOutline } from "react-icons/io";
 import "./navbar.css";
 
 function NavBar () {
@@ -10,6 +11,7 @@ function NavBar () {
             <Link to='/'>Home <IoHomeOutline /></Link>
             <Link to='/login'>Login <FaWpforms /></Link>
             <Link to='/dashboard'>Dashboard <MdOutlineSpaceDashboard /></Link>
+            <Link to='/About'>Acerca de <IoIosInformationCircleOutline /></Link>
         </nav>
     )
 }
