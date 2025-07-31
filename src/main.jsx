@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import login from './login.jsx'
+import login from './pages/login.jsx'
 import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(

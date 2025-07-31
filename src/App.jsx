@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import { BrowserRouter, Route, Routes, Router} from 'react-router';
-import Home from './Home.jsx';
-import Login from './login.jsx';
-import Dashboard from './dashboard.jsx';
-import NavBar from './navbar.jsx';
-import About from './About.jsx'
+import Home from './pages/Home.jsx';
+import Login from './pages/login.jsx';
+import Dashboard from './pages/dashboard.jsx';
+import NavBar from './components/navbar.jsx';
+import About from './pages/About.jsx';
+import ProtectedRoute from './components/protectedRoute.jsx';
 import './App.css'
 
 function App() {
@@ -14,7 +15,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path='/dashboard' element={
+          <ProtectedRoute>
+            <Dashboard/>
+          </ProtectedRoute>
+          }/>
         <Route path="/About" element={<About />} />
       </Routes>
     </BrowserRouter>
