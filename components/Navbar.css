@@ -1,0 +1,46 @@
+.main-navbar {
+  min-height: 100%;
+  min-width: 160px;
+  padding: 2rem;
+  box-sizing: border-box;
+  align-items: center;
+  border-radius: 12px;
+  background-color: oklch(95.57% 0.003 286.35);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.nav-link {
+  border-radius: 20px;
+  padding: 0.5rem 4rem 0.5rem 1rem;
+  text-align: left;
+  text-decoration: none;
+  color: oklch(69.17% 0.004 247.88);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.nav-link:hover {
+  background-color: oklch(25.11% 0.006 258.36);
+  color: oklch(91.87% 0.003 264.54);
+}
+
+.menu h3 {
+  text-align: center;
+  margin: 2rem 0 .5rem 0;
+  padding: 0;
+  color: oklch(76.89% 0.004 247.87);
+}
+
+.logo-div {
+  display: flex;
+  font-size: x-large;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: 900;
+}
