@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter, Route, Routes, Router} from 'react-router';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home.jsx';
 import Login from './pages/login.jsx';
 import Dashboard from './pages/dashboard.jsx';

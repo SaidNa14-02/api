@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { IoHomeOutline } from "react-icons/io5";
 import { FaWpforms } from "react-icons/fa6";
 import { MdOutlineSpaceDashboard } from "react-icons/md";
